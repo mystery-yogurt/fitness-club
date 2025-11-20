@@ -34,7 +34,7 @@ public class Main {
     }
 
     private static void seedData() {
-        Trainer trainer1 = new Trainer("Иван Петров", "Силовые тренировки");
+        Trainer trainer1 = new Trainer("Алексей Петров", "Силовые тренировки");
         Trainer trainer2 = new Trainer("Анна Сидорова", "Йога");
         trainers.addAll(Arrays.asList(trainer1, trainer2));
 
