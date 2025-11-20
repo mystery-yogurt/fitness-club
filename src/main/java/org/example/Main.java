@@ -17,7 +17,6 @@ public class Main {
         runConsole();
     }
 
-    // Сервис: Поиск занятий по имени тренера
     public static List<TrainingSession> findSessionsByTrainer(List<TrainingSession> sessions, String trainerName) {
         if (trainerName == null || trainerName.trim().isEmpty()) {
             return new ArrayList<>();
@@ -28,14 +27,12 @@ public class Main {
                 .collect(Collectors.toList());
     }
 
-    // Сервис: Фильтрация клиентов по абонементу
     public static List<Client> filterClientsByMembership(List<Client> clients, Client.MembershipType type) {
         return clients.stream()
                 .filter(c -> c.getMembershipType() == type)
                 .collect(Collectors.toList());
     }
-    
-    // Остальная часть класса (UI и тестовые данные)
+
     private static void seedData() {
         Trainer trainer1 = new Trainer("Иван Петров", "Силовые тренировки");
         Trainer trainer2 = new Trainer("Анна Сидорова", "Йога");
