@@ -1,4 +1,4 @@
-package com.fitness;
+package org.example;
 
 import java.util.UUID;
 
