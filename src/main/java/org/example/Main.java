@@ -70,7 +70,7 @@ public class Main {
     }
 
     private static void printMenu() {
-        System.out.println("\n=== Меню Фитнес-клуба ===");
+        System.out.println("\n=== Меню Клуба 'АТЛЕТ' ===");
         System.out.println("1 - Поиск занятий по тренеру");
         System.out.println("2 - Фильтрация клиентов по абонементу");
         System.out.println("3 - Показать все занятия");
